@@ -1,0 +1,351 @@
+:root {
+--background: rgb(53, 57, 60);
+--primary: white;
+--accent: #3bdde9;
+}
+*{  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--primary);
+
+}
+
+body{
+    margin: 0 5% 0 5%;  
+    background-color: var(--background)  
+}
+/* ---Header Section---*/
+header{
+    height: 200px;
+    display: flex; 
+    flex-direction: column;  
+    justify-content: space-between;    
+}
+
+.head-content{
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+        
+}
+
+.background-box{
+    height: 20%;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: var(--primary);
+
+
+}
+
+.main-name{
+           margin: 0;
+}
+
+.h-name{ 
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px;
+    margin: 0 0 -16px 2px;
+    position: absolute;          
+  
+}
+
+.h-name-B{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px;
+    margin: 0 0 -16px 4px;
+    color: var(--primary); 
+    
+
+}
+.-elemt{
+    font-size: 42px;
+    margin: 0 0 -10px 0px;
+}
+.name-tags{
+    font-size: 21.5px;
+   
+}
+
+nav{  
+    width: 253px;
+    display: flex;
+    justify-content: space-evenly;
+     
+        
+      
+}
+
+nav a {
+    scroll-behavior: smooth;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 18px;
+         
+}
+
+
+
+
+/* -------------General Main--------------*/
+main{
+    margin: 75px 0 0 0;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    height: 3000px;
+    
+}
+/*-------First Row of the Main Grid--------*/
+#aboutMe{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.myImage{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 25px #000000;
+
+}
+
+.myImage img{    
+    width: 200px;
+}
+
+.aboutMe-word{
+    display: flex;   
+    height: 300px;
+    justify-content: flex-end; 
+    border-right:5px solid var(--primary);
+    
+      
+
+}
+
+.aboutMe-word p{
+    font-weight: 800;
+    font-size: 100px;
+    text-align: right;
+    line-height: 0.7;
+    margin: 0;
+    margin-right: -3px;
+    
+    
+
+}
+
+.aboutMe-info{
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 5px;
+
+
+}
+
+.aboutMe-info p{
+    margin: 0;
+    text-align: left;
+
+}
+
+/*-------Second Row of the Main Grid--------*/
+#works{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    height: 700px; 
+    gap: 20px;
+
+}
+/* --As Graphic Desiner Section-- */
+.graphic-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0px 0px 20px black;
+    transition: 0.3s ease-in-out;
+}
+.graphic-box p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(19, 17, 17);
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    height: 40px;
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+}
+.graphic-box div{
+    display: flex;
+    flex-shrink: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    max-width: 500px;
+    max-height: 600px; 
+    overflow: hidden;
+    box-shadow: 0px 0px 15px var(--accent)black;
+    border-radius: 30px;
+    margin: 10px 10px 30px 10px;
+}
+.graphic-box img{
+    
+    
+    
+}
+
+.graphic-box:hover{
+    box-shadow: 0px 0px 20px var(--accent); 
+
+     div{
+        box-shadow: 0px 0px 15px var(--primary);
+     }
+     p{
+        background-color: var(--accent);
+        color: black;
+        border: 3px solid black;
+     }
+}
+
+/* --As Photographer Section-- */
+.photo-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0px 0px 20px black;
+    transition: 0.3s ease-in-out;
+
+    
+}
+
+.photo-box p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(19, 17, 17);
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    height: 40px;
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+
+
+}
+
+.photo-box div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    max-width: 500px;   
+    max-height: 600px; 
+    box-shadow: 0px 0px 15px black;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 10px 10px 30px 10px;
+    
+}
+
+.photo-box:hover{
+    box-shadow: 0px 0px 20px var(--accent); 
+
+    div{
+        box-shadow: 0px 0px 15px var(--primary);
+     }
+     p{
+        background-color: var(--accent);
+        color: black;
+        border: 3px solid black;
+     }
+}
+
+/* --As Developer Section-- */
+
+.dev-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0px 0px 20px black;
+    transition: 0.3s ease-in-out;
+}
+
+.dev-box p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(19, 17, 17);
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    height: 40px;
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+}
+.dev-box div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    max-width: 500px;
+    max-height: 600px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px black;
+    overflow: hidden;
+    margin: 10px 10px 30px 10px;
+
+}
+
+.dev-box:hover{
+    box-shadow: 0px 0px 20px var(--accent); 
+
+    div{
+        box-shadow: 0px 0px 15px var(--primary);
+     }
+     p{
+        background-color: var(--accent);
+        color: black;
+        border: 3px solid black;
+     }
+}
+
+/*-------Third Row of the Main Grid--------*/
+
+#contact{
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contactMe-word{
+    display: flex;   
+    height: 300px;
+    justify-content: flex-end; 
+    border-right:5px solid var(--primary);
+}
+
+.contactMe-word p{
+    font-weight: 800;
+    font-size: 100px;
+    text-align: right;
+    line-height: 0.7;
+    margin: 0;
+    margin-right: -3px;
+    border-right: 5px solid var(--primary);
+}
+.contactMe-form {
+    margin-left: 20px;
+}
+
+
+
+
